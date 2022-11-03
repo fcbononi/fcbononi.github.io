@@ -97,8 +97,9 @@ body, html {
 
 .bio-text {
     width: 40rem;
+    min-width: 30rem;
     margin-top: 2.0rem;
-    padding: 1rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 5rem 2rem;
 }
 
 .bio-text h2 {
@@ -110,22 +111,30 @@ body, html {
     font-size: 1.2rem;
 }
     
+
+.bio-img {
+    padding: 5rem 2rem 5rem 8rem;
+}
 .bio-img img {
     border-radius: 50%;
-    padding: 2rem 2rem 2rem 5rem;
+    
+    
     
 }
 
 @media only screen and (max-width: 800px) {
+    
     .bio-container {
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
     }
     .bio {
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        
     }
     .bio-img img {
         width: 35rem;
@@ -136,9 +145,82 @@ body, html {
     .bio-text {
         margin-top: 2.0rem;
         width: 40rem;
+        
         align-items: justified;
         justify-content: center;
         align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .bio-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .bio {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .bio-img img {
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .bio-text {
+        margin-top: 2.0rem;
+        width: 30rem;
+        align-items: justified;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  /* CSS */
+.resume-button {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: silver 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .resume-button:hover {
+    background-color: #7accf8;
+    box-shadow: #080447 0 -6px 8px inset;
+    transform: scale(1.125);
+  }
+  
+  .resume-button:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .resume-button {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
     }
   }
 
@@ -272,3 +354,8 @@ body, html {
     background: transparent;
     box-shadow: -5px 10px 20px #ccc;
   }
+
+
+
+
+
