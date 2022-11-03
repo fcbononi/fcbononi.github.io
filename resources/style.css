@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body, html {
+    font-family: 'Montserrat', monospace;
+    background-image: url("./Shutterstock_1938894931.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Top navigation bar */
+
+#nav-left {
+    float: left;
+    color: reg(7,29,114);
+    font-size: 1.8rem;
+    font-weight: 750;   
+}
+
+.top-nav {
+    overflow: hidden;
+    z-index: 1; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(62, 208, 255, 255) , rgba(13, 43, 85, 25));
+    margin-left: 5rem;
+    background-position: center;  
+}
+
+.nav-button {
+    color: white;    
+}
+
+.nav-button:hover {
+    font-weight: 700;
+    color: silver;
+}
+
+.top-nav a {
+    text-decoration: none;
+    padding: 1rem;
+    float: right;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+}
+
+/* About Me */
+
+.header-bio {
+    text-align: center;
+    padding: 5rem;
+    background-image: url("./shutterstock_381708907\ \(1\).jpg");
+    background-attachment: fixed;
+    background-position: center;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    color: white;
+    margin-top: 3.7rem;
+}
+.header-bio h1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    padding: 1.0rem;
+    text-shadow: 0 0 5px #fff,
+                 0 0 20px rgba(62,208,255,255), 
+                 0 0 30px rgba(13,42,85,25), 
+                 0 0 40px rgba(13,42,85,25), 
+                 0 0 55px rgba(13,42,85,25);
+}
+
+
+.header-bio h3 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #fff,
+                 0 0 20px rgba(62,208,255,255), 
+                 0 0 30px rgba(13,42,85,25), 
+                 0 0 40px rgba(13,42,85,25), 
+                 0 0 55px rgba(13,42,85,25);
+
+    
+}
+
+.bio-container {
+    display: flex;
+    
+}
+
+.bio {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.bio-text {
+    width: 40rem;
+    margin-top: 2.0rem;
+    padding: 1rem 2rem 5rem 2rem;
+}
+
+.bio-text h2 {
+    font-size: 3rem;
+    color: gray;
+}
+.bio-text p {
+    font-weight: 350;
+    font-size: 1.2rem;
+}
+    
+.bio-img img {
+    border-radius: 50%;
+    padding: 2rem 2rem 2rem 5rem;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .bio-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+    }
+    .bio {
+        align-items: center;
+        justify-content: center;
+    }
+    .bio-img img {
+        width: 35rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .bio-text {
+        margin-top: 2.0rem;
+        width: 40rem;
+        align-items: justified;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+
+/* Projects */
+
+.projects {
+    font-family: Akshar;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin: 0px -8px 40px -8px;
+    padding: 20px 20px 40px 20px;
+    
+  
+  }
+  
+  .projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    
+  }
+  
+  .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem #f0f0f0;
+  }
+  
+  @media (max-width: 28.75em) {
+    .projects-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  
+  .past-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    margin-top: 30px;
+    font-size: 30px;
+    grid-template-areas: "logo menus toggler";
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-start: auto;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    
+  
+    
+  }
+  
+  .past-container > div {
+    
+    border: 1px solid black;
+    border-radius: 20%;
+    text-align: center;
+    margin: 0;
+  
+  
+  
+   
+  }
+
+/* Mug */
+.mug {
+    position: relative;
+    height: 80px;
+    width: 150px;
+    margin: auto;
+    padding-top: 100px;
+    background: linear-gradient(245deg, #ddd 0, grey .5%, white 100%);
+    background-color: white;
+    border-radius: 50% 50%;
+    border-top-left-radius: 125px 50px;
+    border-top-right-radius: 140px 50px;
+    z-index: 0;
+  }
+   
+.mug_inside {
+    position: absolute;
+    height: 55px;
+    width: 140px;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, #eee 0, silver 100%);
+    box-shadow: 1px 0 15px #eee;
+  }
+  
+.mug:after { /*this is the coffee*/
+    content: "";
+    position: absolute; 
+    Border-style: solid;
+    border-color: rgba(126,92,39,1);
+  height: 35px;
+    width: 125px;
+    top: 11.5px;
+    left: 12px;
+    border-radius: 50% 50% 60% 60%;
+    background: linear-gradient(-6deg, black 1%, rgba(126,89,39,1) 68%, rgba(237,152,60,1) 100%)
+  }
+  
+.handle {
+    position: relative;
+    height: 105px;
+    width: 55px;
+    top: -48px;
+    left: -48px;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 50% 20px;
+    border-bottom-right-radius: 7% 10px;
+    background: linear-gradient(245deg, #ddd 0, lightgrey .5%, white 100%);
+    background-color: white;
+  }
+  
+.handle:after {
+    content: "";
+    position: absolute;
+    height: 75px;
+    width: 37px;
+    top: 15px;
+    left: 11px;
+    border-top-left-radius: 255px 270px;
+    border-bottom-left-radius: 305px 300px;
+    border-top-right-radius: 45px 5px;
+    border-bottom-right-radius: 45px 5px;
+    background: transparent;
+    box-shadow: -5px 10px 20px #ccc;
+  }
