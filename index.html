@@ -24,7 +24,7 @@
   rel="stylesheet"
 />
   <link rel="stylesheet" href="./resources/style.css" type="text/css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
@@ -33,7 +33,14 @@
         
         <nav id="navbar" class="top-nav">
             <div class="nav-left" id="nav-left">
+                
+                <a href="https://www.linkedin.com/in/fernanda-meer-76a6493a/" class="btn contact-details"
+        ><i class="fab fa-linkedin-in"></i></a>
+                <a id="profile-link" href="https://github.com/ferbononi" target="_blank" class="btn contact-details">
+            <i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/fer_bononi" target="_blank" class="btn contact-details"> <i class="fa fa-twitter"></i></a>
                 <a class="nav-button2">Fernanda Meer</a>
+
             </div>
             <a class="nav-button" href="#contact">Contact</a>
             <a class="nav-button" href="#research">Research</a></li>
@@ -141,34 +148,24 @@
 <footer>
     <section id="contact" class="contact-section">
         <div class="contact-section-header">
-        <h2>Contact</h2>
-        <p>Let's grab a coffee!</p>
+            <h2>Contact</h2>
+            <p>Let's grab a coffee!</p>
         </div>
         <div class="mug">
-        <div class="handle"></div>
-        <div class="mug_inside"></div>
+            <div class="handle"></div>
+            <div class="mug_inside"></div>
         </div>
 
-        <div class="contact-links">
-        <a
-        id="profile-link"
-        href="https://github.com/ferbononi"
-        target="_blank"
-        class="btn contact-details">
-            <i class="fab fa-github"></i> GitHub
-        </a>
-        <a
-        href="https://twitter.com/fer_bononi"
-        target="_blank"
-        class="btn contact-details">
-            <i class="fa fa-twitter"></i> Twitter</a
-        >
-        <a href="mailto:fcbononi@ucdavis.edu" class="btn contact-details"
-        ><i class="fas fa-at"></i> Send a mail</a
-        >
-        <a href="https://www.linkedin.com/in/fernanda-meer-76a6493a/" class="btn contact-details"
-        ><i class="fab fa-linkedin-in"></i>LinkedIn</a
-        >
+        <div class="contact-form">
+            <form action="/action_page.php">
+                <label for="fname"></label>
+                <input type="text" id="name" name="name" placeholder="Your name...">
+                <label for="lname"></label>
+                <input type="text" id="email" name="email" placeholder="Your email...">
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Leave me a message" style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </section>
 </footer> 
