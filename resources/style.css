@@ -421,7 +421,7 @@ body, html {
   
 .project-title {
     font-size: 1.5rem;
-    padding: 1rem 0.5rem;
+    padding: 0.5em 0.5em 0.5em 0.5em;
     background: linear-gradient(90deg, rgba(150,207,218,0.8926164215686274) 0%, rgba(235,235,242,0.08029149159663862) 50%, rgba(150,207,218,0.8870141806722689) 100%);
     margin-top: 0px;
 
