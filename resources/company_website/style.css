@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar');
+
+* {
+    font-family: Akshar;
+    font-size: 16px;
+}
+
+.top-nav h1 {
+    text-align: center;
+    font-size: 5rem;
+    justify-content: center;
+    
+}
+
+.nav-bar {
+    text-align: center;
+    margin-top: -40px;
+    display: grid;
+    
+}
+
+.top-nav li  {
+    display: inline;
+    text-decoration: underline;
+    padding: 6rem;
+    color: gray;
+    
+      
+}
+
+.top-nav li > a {
+    color:gray;
+    font-size: 2rem;
+}
+
+
+.mission-background {
+    filter: grayscale(100%);
+    max-width: 1000px;
+    
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright {
+    padding: 10px;
+}
+
+.mission {
+    position: relative; 
+    display: block;
+    height: 600px;
+    margin: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.mission img {
+    display: block;
+    height: auto;
+    width: 100%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+
+.mission h2 {
+    position: absolute; 
+    font-size: 36px;
+    top: 38%; 
+    left: 0; 
+    right: 0; 
+    text-align: center; 
+    padding: 20px;
+    z-index: 1;
+    background-color: white;
+
+}
+
+.mission h3 {
+    position: absolute;
+    top: 56%;
+    text-align: center;
+    font-size: 24px;
+    left: 0; 
+    right: 0; 
+    padding-top: 7px;
+    padding-bottom: 20px;
+    margin-top: 1px;
+    z-index: 1;
+    background-color: white;
+
+}
+
+.offer h2, .offer h3 {
+    text-align: center;
+    
+}
+
+.offer h2 {
+    font-size: 36px;
+    margin-top: -90px;
+
+}
+
+.offer h3 {
+    font-size: 24px;
+}
+
+
+.team h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.team h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.team {
+    position: relative;
+}
+
+.our-team {
+    background-image: url("./resources/1145996.jpg");
+
+    padding-top: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; 
+    background-color: transparent;
+    justify-content:center;
+    padding-bottom: 30px;
+    column-gap: 80px;
+    background-repeat: no-repeat;
+
+    background-position: center top;
+ 
+    
+    
+}
+
+.our-team img {
+    border: 2px solid rgb(183, 187, 201);
+    
+}
+
+#figcaption {
+    
+    color: white;
+}
+
+.our-team div {
+    background-color: rgba(13, 20, 61, 0.822);
+    padding: 10px;
+}
+
+
+
+
+  
+.features #nappies {
+    background-color: rgba(13, 20, 61, 0.637);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    padding: 5px 70px 5px 69px ;
+    display: block;
+    float: center;
+    position: absolute;
+    top: 35%;
+  }
+
+.features #tilts {
+    background-color: rgba(13, 20, 61, 0.637);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    padding: 5px 62px 5px 63px ;
+    display: block;
+    float: center;
+    position: absolute;
+    top: 70%;
+  }
+
+.features #hotdoggin {
+    background-color: rgba(13, 20, 61, 0.637);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    padding: 5px 59px 5px 60px ;
+    display: block;
+    float: center;
+    position: absolute;
+    top: 38%;
+  }
+
+.features #roos {
+    background-color: rgba(13, 20, 61, 0.637);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    padding: 5px 82px 5px 82px ;
+    display: block;
+    float: center;
+    position: absolute;
+    top: 70%;
+  }
+
+.features #zoomies {
+    background-color: rgba(13, 20, 61, 0.637);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    padding: 5px 68px 5px 68px ;
+    display: block;
+    float: center;
+    position: absolute;
+    top: 38%;
+  }
+
+.features #fetch {
+    background-color: rgba(13, 20, 61, 0.637);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    padding: 5px 79px 5px 79px ;
+    display: block;
+    float: center;
+    position: absolute;
+    top: 32%;
+    
+    
+    
+   
+  }
+  
+.features {
+    position: relative;
+    float: center;  
+    
+  }
+
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+}
+
+
+
+.offer {
+    padding: 130px;
+}
